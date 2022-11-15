@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Whitney Semibold', sans-serif;
 }
 
 .container {
@@ -9,43 +10,52 @@
     margin: auto;
 }
 
+header {
+    color: white;
+}
+
 
 .header-top {
     min-height: 80px;
-    background-color: lightblue;
+    background-color:#3161e0;
     display: flex;
 
 }
 
 .header-top nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 }
 
-.logo,.links,.login {
-    background-color: orange;
-    width: calc(100% / 3);
+.logo,.login,.links {
     height: 40px;
-    border: 1px dashed black;
     line-height: 40px;
 }
 
+.login {
+    text-align: right;
+}
+
+.links ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+
 .header-bottom {
-    min-height: 200px;
-    background-color: blue;
+    background-image: url("../img/jumbo.png");
+    background-size:contain;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .header-bottom section {
-    width: 60%;
-    min-height: 200px;
-    background-color: red;
+    width: 50%;
     border: 1px dashed black;
     margin: 15px 0;
+    text-align: center;
 }
 
 main section {
@@ -80,6 +90,8 @@ main section {
 .section-description {
     width: 40%;
     background-color: blueviolet;
+    text-align: center;
+    
 }
 
 .section2 .section-photo {
@@ -93,10 +105,15 @@ main section {
 }
 .section4-content {
     width: 100%;
-    height: 400px;
-    background-color: green;
+    height: 600px;
+    border: 1px dashed black;
     margin: 15px 0;
+    text-align: center;
     
+}
+
+.call-to-action {
+    background-image: url(../img/stars.svg);
 }
 
 
@@ -108,7 +125,6 @@ main section {
 .footer-top-section {
     width: 15%;
     height: 300px;
-    background-color: darkgreen;
     border: 1px dashed black;
     margin-bottom: 15px;
     
@@ -117,8 +133,16 @@ main section {
 .footer-top-section1 {
     width: 40%;
     height: 300px;
-    background-color: lightcoral;
     border: 1px dashed black;
+}
+
+.footer-top-section ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
 }
 
 .footer-bottom {
@@ -132,9 +156,7 @@ main section {
 }
 
 .button {
-    background-color: orange;
-    width: 25%;
-    height: 40px;
     border: 1px dashed black;
-    line-height: 40px;
+    padding: 10px;
+    border-radius: 50px;
 }
