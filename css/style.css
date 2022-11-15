@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+
+.header-top {
+    min-height: 80px;
+    background-color: lightblue;
+    display: flex;
+
+}
+
+.header-top nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo,.links,.login {
+    background-color: orange;
+    width: calc(100% / 3);
+    height: 40px;
+    border: 1px dashed black;
+    line-height: 40px;
+}
+
+.header-bottom {
+    min-height: 200px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bottom section {
+    width: 60%;
+    min-height: 200px;
+    background-color: red;
+    border: 1px dashed black;
+    margin: 15px 0;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section2 {
+    background-color: lightgray;  
+    display: flex;
+    justify-content: center;
+}
+
+.section2 section {
+    width: 75%;
+}
+
+.section-description , .section-photo {
+    min-height: 300px;
+    border: 1px dashed black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section-photo {
+    width: 60%;
+    background-color:aqua;   
+}
+
+.section-description {
+    width: 40%;
+    background-color: blueviolet;
+}
+
+.section2 .section-photo {
+    order: 1;
+}
+
+.section4 {
+    background-color: lightgray;
+    min-height: 300px;
+    margin-bottom: 15px;
+}
+.section4-content {
+    width: 100%;
+    height: 400px;
+    background-color: green;
+    margin: 15px 0;
+    
+}
+
+
+.footer-top {
+    display: flex;
+
+}
+
+.footer-top-section {
+    width: 15%;
+    height: 300px;
+    background-color: darkgreen;
+    border: 1px dashed black;
+    margin-bottom: 15px;
+    
+}
+
+.footer-top-section1 {
+    width: 40%;
+    height: 300px;
+    background-color: lightcoral;
+    border: 1px dashed black;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    margin-top: 15px;
+}
+
+.button {
+    background-color: orange;
+    width: 25%;
+    height: 40px;
+    border: 1px dashed black;
+    line-height: 40px;
+}
