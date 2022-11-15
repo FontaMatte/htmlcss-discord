@@ -9,7 +9,7 @@
     width: 75%;
     margin: auto;
 }
-
+/* REGOLE HEADER  */
 header {
     color: white;
 }
@@ -46,27 +46,41 @@ header {
 
 .header-bottom {
     background-image: url("../img/jumbo.png");
-    background-size:contain;
+    background-size:cover;
+    background-position: center;
     display: flex;
     justify-content: center;
 }
 
 .header-bottom section {
-    width: 50%;
-    border: 1px dashed black;
-    margin: 15px 0;
+    width: 40%;
+    padding-top: 50px;
+    padding-bottom: 160px;
     text-align: center;
 }
 
+.header-bottom section h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.header-bottom section p {
+    margin-bottom: 30px;
+}
+/* FINE REGOLE HEADER  */
+
+
+/* INIZIO REGOLE MAIN */
 main section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 100px 0;
     
 }
 
 .section2 {
-    background-color: lightgray;  
+    background-color: #f6f6f6;  
     display: flex;
     justify-content: center;
 }
@@ -77,21 +91,31 @@ main section {
 
 .section-description , .section-photo {
     min-height: 300px;
-    border: 1px dashed black;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .section-photo {
-    width: 60%;
-    background-color:aqua;   
+    width: 60%;  
+}
+
+.section-photo img {
+    width: 100%;
 }
 
 .section-description {
     width: 40%;
-    background-color: blueviolet;
-    text-align: center;
+    padding-left: 50px;
     
+}
+
+.section2 .section-description {
+    padding-right: 50px;
+}
+
+.section4-content h2,.section-description h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .section2 .section-photo {
@@ -99,24 +123,29 @@ main section {
 }
 
 .section4 {
-    background-color: lightgray;
+    background-color: #f6f6f6;
     min-height: 300px;
     margin-bottom: 15px;
 }
 .section4-content {
     width: 100%;
-    height: 600px;
-    border: 1px dashed black;
     margin: 15px 0;
-    text-align: center;
-    
+    text-align: center; 
+    padding-bottom: 50px;
+}
+
+.section4-content img {
+    width: 100%;
 }
 
 .call-to-action {
     background-image: url(../img/stars.svg);
+    height: 50px;
+    margin-top: 20px;
 }
+/* FINE MAIN  */
 
-
+/* INIZIO FOOTER  */
 .footer-top {
     display: flex;
 
@@ -154,9 +183,18 @@ li a {
     background-color: blue;
     margin-top: 15px;
 }
-
+/* REGOLE BOTTONI */
 .button {
-    border: 1px dashed black;
-    padding: 10px;
+    padding: 10px 30px;
     border-radius: 50px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.purple {
+    background-color:#8ea1e1 ;
+    color: white;
 }
